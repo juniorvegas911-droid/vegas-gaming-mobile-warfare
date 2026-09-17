@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Vegas Gaming: Mobile Warfare</title>
+<link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#07111d">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="menu" class="screen">
+  <div class="logo">VG</div>
+  <h1>VEGAS GAMING</h1><h2>MOBILE WARFARE</h2>
+  <p>BLACK CITY • DUELO POR EQUIPOS</p>
+  <button id="start">JUGAR</button>
+  <small>Prototipo v0.1 • 5 VS 5 • Bots</small>
+</div>
+<div id="hud" class="hidden">
+  <div class="top"><span id="score">VEGAS 0 — 0 ROGUE</span><span id="timer">02:00</span></div>
+  <div class="bar"><span id="hp">100 HP</span><span id="ammo">30 / 120</span></div>
+  <div id="crosshair">+</div>
+  <div class="mobile-controls">
+    <div id="joy" class="joy"><div></div></div>
+    <button id="fire">●</button><button id="reload">↻</button>
+  </div>
+</div>
+<div id="result" class="screen hidden">
+  <h1 id="resultTitle">VICTORIA</h1>
+  <p id="resultScore"></p><p id="mvp"></p>
+  <button id="again">JUGAR DE NUEVO</button>
+</div>
+<script src="game.js"></script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js")}</script>
+</body>
+</html>

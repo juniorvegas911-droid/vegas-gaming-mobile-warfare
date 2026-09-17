@@ -1,0 +1,10 @@
+{
+  "name": "Vegas Gaming: Mobile Warfare",
+  "short_name": "Vegas Warfare",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#05090e",
+  "theme_color": "#07111d",
+  "description": "Prototipo jugable de Vegas Gaming: Mobile Warfare"
+}
